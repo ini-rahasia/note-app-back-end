@@ -4,6 +4,7 @@ const routes = require('./routes');
 const init = async () => {
   const server = Hopi.server({
     port: 5000,
+    // host: process.env.NODE_ENV !== 'production' ? 'localhost' : 'IP Public EC2 Instance',
     host: 'localhost',
     routes: {
       cors: {
